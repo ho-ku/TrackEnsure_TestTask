@@ -3,29 +3,51 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376BE48725051E580003F313 /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE48625051E580003F313 /* StationCell.swift */; };
+		376BE48925052A120003F313 /* EditStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE48825052A120003F313 /* EditStationVC.swift */; };
+		376BE48B250553D90003F313 /* AddRefuelingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376BE48A250553D90003F313 /* AddRefuelingVC.swift */; };
 		379945AC2503BD6500172BDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379945AB2503BD6500172BDB /* AppDelegate.swift */; };
 		379945AE2503BD6500172BDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379945AD2503BD6500172BDB /* SceneDelegate.swift */; };
-		379945B02503BD6500172BDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379945AF2503BD6500172BDB /* ViewController.swift */; };
+		379945B02503BD6500172BDB /* StationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379945AF2503BD6500172BDB /* StationsVC.swift */; };
 		379945B32503BD6500172BDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379945B12503BD6500172BDB /* Main.storyboard */; };
 		379945B62503BD6500172BDB /* TrackEnsure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 379945B42503BD6500172BDB /* TrackEnsure.xcdatamodeld */; };
 		379945B82503BD6900172BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379945B72503BD6900172BDB /* Assets.xcassets */; };
 		379945BB2503BD6900172BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379945B92503BD6900172BDB /* LaunchScreen.storyboard */; };
+		37A1859A2503C7FA002E149A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A185992503C7FA002E149A /* CoreDataManager.swift */; };
+		37A1859C2503D183002E149A /* NewStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1859B2503D183002E149A /* NewStationVC.swift */; };
+		37A1859E2503D190002E149A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1859D2503D190002E149A /* Constants.swift */; };
+		37A185A02503D44D002E149A /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A1859F2503D44D002E149A /* AlertManager.swift */; };
+		37A185A22503D732002E149A /* SelectLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A185A12503D732002E149A /* SelectLocationVC.swift */; };
+		37F70E7E2503C0F6008D6EB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37F70E7D2503C0F6008D6EB9 /* GoogleService-Info.plist */; };
+		D48ACCD51B7D99A4B1AFD116 /* Pods_TrackEnsure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEB005CA7C4652AB59A8CCD /* Pods_TrackEnsure.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2141C0DC9C4B482EF5953F7F /* Pods-TrackEnsure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackEnsure.debug.xcconfig"; path = "Target Support Files/Pods-TrackEnsure/Pods-TrackEnsure.debug.xcconfig"; sourceTree = "<group>"; };
+		376BE48625051E580003F313 /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		376BE48825052A120003F313 /* EditStationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStationVC.swift; sourceTree = "<group>"; };
+		376BE48A250553D90003F313 /* AddRefuelingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRefuelingVC.swift; sourceTree = "<group>"; };
 		379945A82503BD6500172BDB /* TrackEnsure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackEnsure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379945AB2503BD6500172BDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379945AD2503BD6500172BDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		379945AF2503BD6500172BDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		379945AF2503BD6500172BDB /* StationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsVC.swift; sourceTree = "<group>"; };
 		379945B22503BD6500172BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		379945B52503BD6500172BDB /* TrackEnsure.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrackEnsure.xcdatamodel; sourceTree = "<group>"; };
 		379945B72503BD6900172BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379945BA2503BD6900172BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		379945BC2503BD6900172BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37A185992503C7FA002E149A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		37A1859B2503D183002E149A /* NewStationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStationVC.swift; sourceTree = "<group>"; };
+		37A1859D2503D190002E149A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37A1859F2503D44D002E149A /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		37A185A12503D732002E149A /* SelectLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocationVC.swift; sourceTree = "<group>"; };
+		37F70E7D2503C0F6008D6EB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACEB005CA7C4652AB59A8CCD /* Pods_TrackEnsure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackEnsure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE85DD5D6F44C78D3C611F90 /* Pods-TrackEnsure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackEnsure.release.xcconfig"; path = "Target Support Files/Pods-TrackEnsure/Pods-TrackEnsure.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48ACCD51B7D99A4B1AFD116 /* Pods_TrackEnsure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +67,8 @@
 			children = (
 				379945AA2503BD6500172BDB /* TrackEnsure */,
 				379945A92503BD6500172BDB /* Products */,
+				4BC619BFBE5AF0B89769F111 /* Pods */,
+				B9D915306A9F232611631889 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +83,114 @@
 		379945AA2503BD6500172BDB /* TrackEnsure */ = {
 			isa = PBXGroup;
 			children = (
-				379945AB2503BD6500172BDB /* AppDelegate.swift */,
-				379945AD2503BD6500172BDB /* SceneDelegate.swift */,
-				379945AF2503BD6500172BDB /* ViewController.swift */,
-				379945B12503BD6500172BDB /* Main.storyboard */,
-				379945B72503BD6900172BDB /* Assets.xcassets */,
-				379945B92503BD6900172BDB /* LaunchScreen.storyboard */,
+				37F70E872503C2D0008D6EB9 /* AppDelegate */,
+				37F70E862503C2BA008D6EB9 /* Extensions */,
+				37F70E852503C2B5008D6EB9 /* Model */,
+				37F70E842503C2A9008D6EB9 /* ViewModel */,
+				37F70E832503C2A2008D6EB9 /* View */,
+				37F70E822503C29D008D6EB9 /* Controller */,
+				37F70E812503C298008D6EB9 /* Storyboards */,
+				37F70E802503C290008D6EB9 /* Resources */,
+				37F70E7F2503C286008D6EB9 /* Supporting Files */,
+				37F70E7D2503C0F6008D6EB9 /* GoogleService-Info.plist */,
 				379945BC2503BD6900172BDB /* Info.plist */,
-				379945B42503BD6500172BDB /* TrackEnsure.xcdatamodeld */,
 			);
 			path = TrackEnsure;
+			sourceTree = "<group>";
+		};
+		37F70E7F2503C286008D6EB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37A185992503C7FA002E149A /* CoreDataManager.swift */,
+				37A1859D2503D190002E149A /* Constants.swift */,
+				37A1859F2503D44D002E149A /* AlertManager.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37F70E802503C290008D6EB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				379945B72503BD6900172BDB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37F70E812503C298008D6EB9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				379945B12503BD6500172BDB /* Main.storyboard */,
+				379945B92503BD6900172BDB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		37F70E822503C29D008D6EB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				379945AF2503BD6500172BDB /* StationsVC.swift */,
+				37A1859B2503D183002E149A /* NewStationVC.swift */,
+				37A185A12503D732002E149A /* SelectLocationVC.swift */,
+				376BE48825052A120003F313 /* EditStationVC.swift */,
+				376BE48A250553D90003F313 /* AddRefuelingVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37F70E832503C2A2008D6EB9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				376BE48625051E580003F313 /* StationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37F70E842503C2A9008D6EB9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		37F70E852503C2B5008D6EB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				379945B42503BD6500172BDB /* TrackEnsure.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37F70E862503C2BA008D6EB9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37F70E872503C2D0008D6EB9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				379945AB2503BD6500172BDB /* AppDelegate.swift */,
+				379945AD2503BD6500172BDB /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4BC619BFBE5AF0B89769F111 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2141C0DC9C4B482EF5953F7F /* Pods-TrackEnsure.debug.xcconfig */,
+				AE85DD5D6F44C78D3C611F90 /* Pods-TrackEnsure.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9D915306A9F232611631889 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACEB005CA7C4652AB59A8CCD /* Pods_TrackEnsure.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 379945BF2503BD6900172BDB /* Build configuration list for PBXNativeTarget "TrackEnsure" */;
 			buildPhases = (
+				ACFF913AA68EECEDE47FAD34 /* [CP] Check Pods Manifest.lock */,
 				379945A42503BD6500172BDB /* Sources */,
 				379945A52503BD6500172BDB /* Frameworks */,
 				379945A62503BD6500172BDB /* Resources */,
+				5BB559A62EAF3C6F3DE887E7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				379945BB2503BD6900172BDB /* LaunchScreen.storyboard in Resources */,
+				37F70E7E2503C0F6008D6EB9 /* GoogleService-Info.plist in Resources */,
 				379945B82503BD6900172BDB /* Assets.xcassets in Resources */,
 				379945B32503BD6500172BDB /* Main.storyboard in Resources */,
 			);
@@ -136,15 +262,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BB559A62EAF3C6F3DE887E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackEnsure/Pods-TrackEnsure-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrackEnsure/Pods-TrackEnsure-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrackEnsure/Pods-TrackEnsure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFF913AA68EECEDE47FAD34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackEnsure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		379945A42503BD6500172BDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379945B02503BD6500172BDB /* ViewController.swift in Sources */,
+				376BE48725051E580003F313 /* StationCell.swift in Sources */,
+				37A185A02503D44D002E149A /* AlertManager.swift in Sources */,
+				379945B02503BD6500172BDB /* StationsVC.swift in Sources */,
 				379945AC2503BD6500172BDB /* AppDelegate.swift in Sources */,
 				379945AE2503BD6500172BDB /* SceneDelegate.swift in Sources */,
+				37A1859A2503C7FA002E149A /* CoreDataManager.swift in Sources */,
+				376BE48B250553D90003F313 /* AddRefuelingVC.swift in Sources */,
+				37A1859E2503D190002E149A /* Constants.swift in Sources */,
+				37A185A22503D732002E149A /* SelectLocationVC.swift in Sources */,
+				37A1859C2503D183002E149A /* NewStationVC.swift in Sources */,
 				379945B62503BD6500172BDB /* TrackEnsure.xcdatamodeld in Sources */,
+				376BE48925052A120003F313 /* EditStationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +462,7 @@
 		};
 		379945C02503BD6900172BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2141C0DC9C4B482EF5953F7F /* Pods-TrackEnsure.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +482,7 @@
 		};
 		379945C12503BD6900172BDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE85DD5D6F44C78D3C611F90 /* Pods-TrackEnsure.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
