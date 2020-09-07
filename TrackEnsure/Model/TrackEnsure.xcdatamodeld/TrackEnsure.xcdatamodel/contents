@@ -6,13 +6,13 @@
         <attribute name="lat" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="lon" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String"/>
-        <relationship name="refueling" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Refueling" inverseName="station" inverseEntity="Refueling"/>
+        <relationship name="refuelings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Refueling" inverseName="station" inverseEntity="Refueling"/>
     </entity>
     <entity name="Refueling" representedClassName="Refueling" syncable="YES" codeGenerationType="class">
         <attribute name="fuelType" optional="YES" attributeType="String"/>
         <attribute name="litres" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GasStation" inverseName="refueling" inverseEntity="GasStation"/>
+        <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GasStation" inverseName="refuelings" inverseEntity="GasStation"/>
     </entity>
     <elements>
         <element name="GasStation" positionX="-221.08203125" positionY="-55.1953125" width="128" height="133"/>

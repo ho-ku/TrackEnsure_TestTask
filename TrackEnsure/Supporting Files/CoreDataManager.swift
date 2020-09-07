@@ -33,6 +33,13 @@ final class CoreDataManager {
         appDelegate.saveContext()
     }
     
+    func removeAllStations() {
+        let stations = fetchStations()
+        for station in stations {
+            delete(station: station)
+        }
+    }
+    
     func changeStationInfo(_ station: GasStation, newName: String?, newProvider: String?) {
         guard let appDelegate = appDelegate else { return }
         if let name = newName {
@@ -58,7 +65,7 @@ final class CoreDataManager {
         newRefueling.fuelType = fuelType
         newRefueling.litres = amount
         newRefueling.price = cost
-        station.addToRefueling(newRefueling)
+        station.addToRefuelings(newRefueling)
         appDelegate.saveContext()
     }
 }

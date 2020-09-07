@@ -20,4 +20,5 @@ struct C {
     static let editTitle: String = "Edit"
     static let editStationSegue: String = "editStationSegue"
     static let addRefuelingSegue: String = "addRefuelingSegue"
+    static let statisticsCellIdentifier: String = "statisticsCell"
 }

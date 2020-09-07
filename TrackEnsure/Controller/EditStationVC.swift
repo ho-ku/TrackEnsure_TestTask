@@ -57,6 +57,7 @@ final class EditStationVC: UIViewController {
     @IBAction func okBtnPressed(_ sender: Any) {
         let parameters = configureSavingParameters()
         coredataManager.changeStationInfo(stationToEdit, newName: parameters.0, newProvider: parameters.1)
+        FirebaseSynchronizer().saveChanges()
         delegate?.didFinishAddingStation()
         dismiss(animated: true, completion: nil)
     }

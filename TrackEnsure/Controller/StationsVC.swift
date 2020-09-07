@@ -17,13 +17,23 @@ final class StationsVC: UIViewController {
     private let coreDataManager = CoreDataManager()
     private var stations = [GasStation]()
     private var chosenStation: GasStation?
+    private let firebaseSynchronizer = FirebaseSynchronizer()
     
     // MARK: - Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchAndReload()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTableView()
-        fetchAndReload()
+        coreDataManager.removeAllStations()
+        firebaseSynchronizer.synchronize { [unowned self] in
+            self.fetchAndReload()
+        }
     }
     
     private func configureTableView() {

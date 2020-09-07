@@ -11,25 +11,25 @@ import UIKit
 final class AddRefuelingVC: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet weak var fuelTypeField: UITextField! {
+    @IBOutlet private weak var fuelTypeField: UITextField! {
         didSet {
             fuelTypeField.delegate = self
             fuelTypeField.tag = 1
         }
     }
-    @IBOutlet weak var amountField: UITextField! {
+    @IBOutlet private weak var amountField: UITextField! {
         didSet {
             amountField.delegate = self
             amountField.tag = 2
         }
     }
-    @IBOutlet weak var costField: UITextField! {
+    @IBOutlet private weak var costField: UITextField! {
         didSet {
             costField.delegate = self
             costField.tag = 3
         }
     }
-    @IBOutlet weak var okBtn: UIButton!
+    @IBOutlet private weak var okBtn: UIButton!
     
     // MARK: - Properties
     var currentStation: GasStation!
@@ -50,6 +50,7 @@ final class AddRefuelingVC: UIViewController {
     @IBAction func okBtnPressed(_ sender: Any) {
         guard let fuelType = fuelTypeField.text, fuelType != "", let amount = amountField.text, let doubleAmount = Double(amount), let cost = costField.text, let doubleCost = Double(cost) else { AlertManager.presentAlert(self, title: "Oops..", message: "Some of the fields are blank or contains inappropriate info"); return }
         coredataManager.addRefueling(to: currentStation, fuelType: fuelType, amount: doubleAmount, cost: doubleCost)
+        FirebaseSynchronizer().saveChanges()
         dismiss(animated: true, completion: nil)
     }
 }

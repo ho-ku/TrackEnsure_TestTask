@@ -77,6 +77,7 @@ final class SelectLocationVC: UIViewController {
     // MARK: - IBActions
     @IBAction func okBtnPressed(_ sender: Any) {
         coredataManager.addStation(name: selectedName, provider: selectedProvider, coordinate: mapView.centerCoordinate)
+        FirebaseSynchronizer().saveChanges()
         dismiss(animated: true) { [unowned self] in
             self.newStationVC?.dismiss(animated: true, completion: nil)
         }
